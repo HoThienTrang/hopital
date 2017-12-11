@@ -3,7 +3,6 @@ FROM ubuntu:16.04
 # Install apache, PHP, and supplimentary programs. openssh-server, curl, and lynx-cur are for debugging the container.
 RUN apt-get update && apt-get -y upgrade && apt-get -y install \
  apache2 php7.0 libapache2-mod-php7.0 php7.0-cli php7.0-common php7.0-mbstring php7.0-gd php7.0-intl php7.0-xml php7.0-mysql php7.0-mcrypt php7.0-zip \
-
  libcurl4-openssl-dev pkg-config libssl-dev libsslcommon2-dev php-pear php-dev vim
 
 RUN curl -sS https://getcomposer.org/installer -o composer-setup.php
